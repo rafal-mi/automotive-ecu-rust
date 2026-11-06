@@ -1,0 +1,22 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Rust",
+            "type": "shell",
+            "command": "rustc",
+            "args": [
+                "--edition=2021",
+                "-g",
+                "-C",
+                "opt-level=0",
+                "example.rs",
+                "-o",
+                "example"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
